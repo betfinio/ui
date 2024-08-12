@@ -11,5 +11,5 @@ bun add @betfinio/ui
 Then in code:
 
 ```ts
-import { TokenContract } from '@betfinio/ui';
+import { TokenContract } from '@betfinio/ui/icons';
 
