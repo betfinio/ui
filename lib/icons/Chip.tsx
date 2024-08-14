@@ -1,11 +1,12 @@
 import {FC} from "react";
 import millify from "millify";
+import cx from "clsx";
 
-const Chip: FC<{ className?: string, value: number, fontSize: number }> = ({className = "", value, fontSize = 6}) => {
+const Chip: FC<{ className?: string, value: number, fontSize: number, labelClassName: string }> = ({className = "", value, labelClassName, fontSize = 6}) => {
 	return <div className={className}>
 		<svg xmlns="http://www.w3.org/2000/svg" className={'w-full h-full'} width="154" height="154" viewBox="0 0 154 154"
-				 fill="none">
-
+		     fill="none">
+			
 			<path
 				d="M77.0001 154C119.526 154 154 119.526 154 77C154 34.4741 119.526 0 77.0001 0C34.4741 0 0 34.4741 0 77C0 119.526 34.4741 154 77.0001 154Z"
 				fill="#131624"/>
@@ -18,7 +19,7 @@ const Chip: FC<{ className?: string, value: number, fontSize: number }> = ({clas
 			<path
 				d="M77.0004 18.0427C109.458 18.0854 135.735 44.4332 135.692 76.8915C135.648 109.35 109.302 135.627 76.8438 135.583C44.3856 135.54 18.1084 109.193 18.1518 76.7348C18.1835 53.1425 32.3192 31.8558 54.0519 22.6752C61.3112 19.6027 69.117 18.0268 77.0004 18.0427ZM77.0004 17C43.8603 17 17 43.8597 17 76.9995C17 110.14 43.8603 137 77.0004 137C110.14 137 137 110.137 137 76.9995C137 43.862 110.138 17 77.0004 17Z"
 				fill="currentColor"/>
-
+			
 			<path
 				d="M78.6353 62.4966C77.4511 62.4922 75.849 62.4823 73.9157 62.4553L71.6624 68.6357H76.4193L78.6353 62.4966ZM72.4412 68.0906L74.2952 63.0053C75.4942 63.0207 76.6894 63.0317 77.8603 63.0378L76.0404 68.0906H72.4412Z"
 				fill="currentColor"/>
@@ -36,9 +37,9 @@ const Chip: FC<{ className?: string, value: number, fontSize: number }> = ({clas
 				d="M82.5682 68.6346C83.8882 68.5565 84.5658 68.5098 85.3369 68.1523C85.9122 67.8872 86.9896 67.3905 87.2652 66.3472C87.599 65.0778 86.5073 63.9151 86.301 63.6995C85.3072 62.644 83.9294 62.4444 83.0241 62.4444C82.7211 62.4433 82.4191 62.4658 82.1194 62.5131L79.9111 68.633C80.3005 68.6566 80.746 68.6731 81.2399 68.6731C81.6497 68.6748 82.0946 68.6627 82.5682 68.6346ZM82.5176 63.0125C82.6551 63.0004 82.8272 62.99 83.023 62.99C83.8711 62.99 85.0591 63.1781 85.9028 64.074C86.2306 64.4183 86.9676 65.3264 86.7355 66.2091C86.5287 67.0044 85.6383 67.4142 85.1081 67.6556C84.4398 67.9642 83.8684 68.0093 82.5363 68.0885C82.1062 68.1138 81.6695 68.127 81.2383 68.127C81.0513 68.127 80.8621 68.127 80.6734 68.1193L82.5176 63.0125Z"
 				fill="currentColor"/>
 			<path d="M80.9188 62.501C80.5795 62.501 80.2192 62.501 79.837 62.501L77.6238 68.6357H78.7067L80.9188 62.501Z"
-						fill="currentColor"/>
+			      fill="currentColor"/>
 			<path d="M77.8795 70.9258L78.5324 69.1152H77.4489L76.7993 70.9165L77.2734 70.9203L77.8795 70.9258Z"
-						fill="currentColor"/>
+			      fill="currentColor"/>
 			<path
 				d="M53.5122 22.1719C60.974 19.0035 68.9127 17.3993 77.1082 17.3993V6.06892e-05H76.9988C66.5933 -0.0130261 56.294 2.09051 46.7271 6.18255L53.5122 22.1719Z"
 				fill="currentColor"/>
@@ -64,10 +65,9 @@ const Chip: FC<{ className?: string, value: number, fontSize: number }> = ({clas
 				d="M53.5122 22.1719C60.974 19.0035 68.9127 17.3993 77.1082 17.3993V6.06892e-05H76.9988C66.5933 -0.0130261 56.294 2.09051 46.7271 6.18255L53.5122 22.1719Z"
 				fill="currentColor"/>
 		</svg>
-		<span className={'absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 text-white font-bold'} style={{fontSize: `${fontSize}px`}}>{millify(value)}</span>
-
+		<span className={cx('absolute left-1/2 -translate-y-1/2 -translate-x-1/2 text-white font-bold', className)} style={{fontSize: `${fontSize}px`}}>{millify(value)}</span>
 	</div>
-
+	
 }
 
 export default Chip
