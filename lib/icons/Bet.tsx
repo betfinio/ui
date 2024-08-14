@@ -13,5 +13,4 @@ const Bet: FC<IconProps> = ({className = 'text-[#0F121D]', color = ''}) => {
 			fill="#0F121D"/>
 	</svg>
 }
-
 export default Bet;
