@@ -65,7 +65,7 @@ const Chip: FC<{ className?: string, value: number, fontSize: number, labelClass
 				d="M53.5122 22.1719C60.974 19.0035 68.9127 17.3993 77.1082 17.3993V6.06892e-05H76.9988C66.5933 -0.0130261 56.294 2.09051 46.7271 6.18255L53.5122 22.1719Z"
 				fill="currentColor"/>
 		</svg>
-		<span className={cx('absolute left-1/2 -translate-y-1/2 -translate-x-1/2 text-white font-bold', className)} style={{fontSize: `${fontSize}px`}}>{millify(value)}</span>
+		<span className={cx('absolute left-1/2 -translate-y-1/2 -translate-x-1/2 text-white font-bold', labelClassName)} style={{fontSize: `${fontSize}px`}}>{millify(value)}</span>
 	</div>
 	
 }
