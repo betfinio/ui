@@ -72,6 +72,7 @@ import MoneyUp from './MoneyUp';
 import Letter from './Letter';
 import Warning from './Warning';
 import Bonus from './Bonus.tsx';
+import ConservativeStaking from "./ConservativeStaking.tsx";
 
 export {
 	Affiliate,
@@ -82,6 +83,7 @@ export {
 	DepthAffiliate,
 	MoneyUp,
 	Bet,
+	ConservativeStaking,
 	BetLogo,
 	Bonus,
 	Blackjack,
