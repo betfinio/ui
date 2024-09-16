@@ -1,7 +1,7 @@
 {
 	"name": "@betfinio/ui",
 	"type": "module",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"repository": {
 		"url": "https://github.com/betfinio/ui.git"
 	},
