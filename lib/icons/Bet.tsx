@@ -1,7 +1,7 @@
 import {IconProps} from "./";
 import {FC} from "react";
 
-const Bet: FC<IconProps> = ({className = 'text-[#0F121D]', color = ''}) => {
+const Bet: FC<IconProps> = ({className = 'text-[#FFC800]', color = ''}) => {
 	return <svg xmlns="http://www.w3.org/2000/svg" className={className} width="12" height="12" viewBox="0 0 12 12"
 	            fill="none">
 		<circle cx="6" cy="6" r="6" fill={color === 'white' ? '#fff' : color == 'green' ? '#21c55e' : color == 'blue' ? '#3b82f6' : color == 'red' ? '#ef4444' : "currentColor"}/>
