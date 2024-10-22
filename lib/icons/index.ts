@@ -29,6 +29,7 @@ import Diamonds from './Diamonds';
 import Discord from './Discord';
 import Dyno from './Dyno';
 import EnglishFlag from './EnglishFlag';
+import Event from './Event.tsx';
 import Facebook from './Facebook';
 import Fox from './Fox';
 import Github from './Github';
@@ -81,6 +82,7 @@ export {
 	BankBig,
 	DirectAffiliate,
 	DepthAffiliate,
+	Event,
 	MoneyUp,
 	Bet,
 	ConservativeStaking,
