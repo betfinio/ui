@@ -24,6 +24,7 @@ import Coinmarketcap from './Coinmarketcap';
 import Coins from './Coins';
 import CoinStack from './CoinStack';
 import Contact from './Contact';
+import Cookies from './Cookies.tsx';
 import CzechFlag from './CzechFlag';
 import Diamonds from './Diamonds';
 import Discord from './Discord';
@@ -103,6 +104,7 @@ export {
 	Coins,
 	CoinStack,
 	Contact,
+	Cookies,
 	CzechFlag,
 	Diamonds,
 	Discord,
